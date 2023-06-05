@@ -34,15 +34,15 @@ function Imprint() {
                 <p>
                     Kontaktdaten: 
                 </p>
-                <ul>
+                <dl>
                     {
                         content.imprint.kontaktdaten.map(item => {
                             return (
-                                <li>{item}</li>
+                                <dt>{item}</dt>
                             )
                         })
                     }
-                </ul>
+                </dl>
                 <p>
                     {content.imprint.mitgliedschaftenBeiDerWKO}
                 </p>
