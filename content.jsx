@@ -25,8 +25,18 @@ const content =  {
                 <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
                 </svg>
                 </>
-            )
+            ),
         }
+    },
+
+    cart: {
+        removeIcon: (
+                <svg width="36" height="36" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"></path>
+                <path d="m18 9-6 6"></path>
+                <path d="m12 9 6 6"></path>
+                </svg>
+            )
     },
 
     slideshow: [

@@ -9,7 +9,13 @@ function App() {
 
     function addToCart(id) {
         setCart(prevCart => {
-            return [id, ...prevCart]
+            return cart.includes(id) ? prevCart : [id, ...prevCart]
+        })
+    }
+
+    function removeFromCart(id) {
+        setCart(prevCart => {
+            return prevCart.filter(element => element !== id)
         })
     }
     console.log(cart);
@@ -28,7 +34,7 @@ function App() {
 
         <Routes>
             <Route path='/' element={<Index addToCart={addToCart}/>} />
-            <Route path='/cart' element={<Cart cartItems={cart}/>} />
+            <Route path='/cart' element={<Cart cartItems={cart} removeItem={removeFromCart}/>} />
         </Routes>
     )
 }
