@@ -33,8 +33,8 @@ function App() {
         // </>
 
         <Routes>
-            <Route path='/' element={<Index addToCart={addToCart}/>} />
-            <Route path='/cart' element={<Cart cartItems={cart} removeItem={removeFromCart}/>} />
+            <Route path='/mani' element={<Index addToCart={addToCart}/>} />
+            <Route path='/mani/cart' element={<Cart cartItems={cart} removeItem={removeFromCart}/>} />
         </Routes>
     )
 }
